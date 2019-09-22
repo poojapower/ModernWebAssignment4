@@ -1,0 +1,48 @@
+body {
+  margin:20px auto 0 auto;
+  width:960px;          
+}
+
+div, footer {
+    background: silver;
+   
+}
+
+nav,section,footer,main{
+    display: grid;
+    margin-bottom:10px;
+}
+
+.navi{
+    height:30px;
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    align-self:center;
+    align-content:center;
+}
+
+
+nav{
+    
+    grid-template: 60px / 220px 1fr;
+    grid-gap:250px;
+
+}
+
+section{
+    grid-template-rows:250px;
+    
+}
+
+
+main{
+    grid-template:160px / repeat(2,472px);
+    justify-content: space-evenly;
+    gap:15px;
+}
+
+footer {
+    height: 40px;
+    align-self: center;
+    justify-items:center;
+} 
